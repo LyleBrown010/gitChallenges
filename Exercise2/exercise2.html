@@ -141,71 +141,322 @@
 
      <!-- HTML LINKS  -->
      <section>
+        <a href="default.html">Visit our HTML tutorial</a>
 
+        <a href="html_images.asp" style="text-decoration:none">HTML Images</a>
+
+        <a href="html_images.asp" target="_blank">HTML Images</a>
+
+        <a href="default.html" <img src="smiley.gif"></a>
+
+        <a href="deafult.html" title="Home">Back to Home</a>
      </section>
 
      <!-- HTML IMAGES  -->
      <section>
+        <img src="scream.png" width="250" height="400">
 
+        <img src="scream.png" style="width: 250px; height: 400px;">
+
+        <a href="default.html" <img src="smiley.gif"></a>
+
+        <p>
+            <img src="smiley.gif" style="float:right;">
+            This is a paragraph.
+            This paragraph contains an image
+        </p>
+
+        <img src="smiley.gif">
+
+        <img src="smiley.gif" alt="Smiley">
      </section>
 
      <!-- HTML TABLES  -->
      <section>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <th>Lyle Brown</th>
+                <th>5364</th>
+            </tr>
+        </table>
+
+        <table>
+  
+            <caption>Names</caption>
+            
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+              </tr>
+              <tr>
+                <td>Lyle</td>
+                <td>Brown</td>
+                <td>50345</td>
+              </tr>
+            </table> 
+
+        <table style="width:300px;">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill Smith</td>
+              <td>50</td>
+            </tr>
+            
+            <tr>
+                <td>Eve Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+              <th olspan="2">Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+              <th>Name</th>
+              <td>Jill Smith</td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td>555-77854</td>
+            </tr>
+            <tr>
+              <td>555-77854</td>
+            </tr>
+        </table>
+
 
      </section>
 
      <!-- HTML LISTS  -->
      <section>
+        <ul>
+            <li>Coffee</li>
+        </ul>
+
+        <ol>
+            <li>COffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ol>
+
+        <ul style="list-style-type:square;">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+
+        <ol type="A">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ol>
+
+        <ol type="I">
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ol>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>-black hot drink</dd>
+            <dt>milk</dt>
+            <dd>-white cold drink</dd>
+        </dl>
+
 
      </section>
 
      <!-- HTML CLASSES  -->
      <section>
+        .special{
+            color:blue;
+        }
 
+        <h1 class="mystyle">My home page</h1>
+
+        <h1 class="intro special">My Home Page</h1>
      </section>
 
      <!-- HTML ID  -->
      <section>
+        <h1 id="myheader">My Home Page</h1>
+
+        #special{
+            color:blue;
+        }
 
      </section>
 
      <!-- HTML IFRAMES  --> 
      <section>
+        <iframe src="https://www.w3schools.com"></iframe>
 
+        <iframe src="https://www.w3schools.com" width="500"></iframe>
+
+        <iframe src="https://www.w3schools.com" style="border:none;"></iframe>
+
+        <iframe src="default.html"></iframe>
      </section> 
 
      <!-- HTML SCRIPTS  -->
      <section>
+        <script>
+            document.getElementById("demo").
+            innerHTML = "Hello World!";    
+        </script>
+        <script>
+            document.getElementById("demo").
+            style.fontSize= "40px";
+        </script>
+        <p id="demo">Hi.</p>
+
+        <script>
+        document.getElementById("demo").
+        style.color= "red";
+        </script>
+        <img id="demo" src="scream.png">
+
+        <script>
+        document.getElementById("demo").
+        src= "smiley.gif";
+        </script>
+
 
      </section>
 
      <!-- HTML COMPUTERCODE -->
      <section>
+        <p>Code example: <code>var person;</code>
+        </p>
+
+        <p>Code example:</p>
+        <pre><code>var person = {
+            firstName:"John",
+            lastName:"Doe"}</code>
+        </pre>
+        <p>A simple math equation: <var>x</var>= 3 + 2; </p>
+
 
      </section>
 
      <!-- HTML FORMS  -->
      <section>
-
+        <form>
+            <input type="button" value="OK">
+        </form>
+        <form>
+            <input type="radio" name="fav_language" value="html"> HTML
+            <input type="radio" name="fav_language" value="css"> CSS
+        </form>
+        
      </section>
 
      <!-- HTML FORM ATTRIBUTES  -->
      <section>
-
+        <form action="/action_page.php">Name: <input type="text" name="name"><input type="submit">
+        </form>
+        <form action="/action_page.php" method="post">Name: <input type="text" name="name"><input type="submit">
+        </form>
      </section>
 
      <!-- HTML FORM ELEMENTS  -->
      <section>
+        <form action="/action_page.php">
+            <select name="cars"></select>
+            </form>
 
+        <form action="/action_page.php">
+            <select name="cars">
+                <option value="Volvo">Volvo</option>
+                <option value="Ford">Ford</option>
+            </select>
+        </form>
+        <form action="/action_page.php">
+            <textarea name="note"></textarea>
+        </form>
      </section>
 
      <!-- HTML INPUT TYPES  -->
      <section>
+        <form action="/action_page.php">
+            <input type="text" name="username">
+        </form>
 
-     </section>
+        <form action="/action_page.php">
+            <input type="text" name="username">
+            <input type="submit" value="Submit Form">
+        </form>
+
+        <form action="/action_page.php">
+            Favorite color:
+            Blue
+            <input value="blue" type="radio"name="color">
+            Red
+            <input value="red" type="radio" name="color">
+            <input type="submit">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="button" value="Click Me">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="number" min="1" max="5">
+        </form>
+    </section>
 
      <!-- HTML INPUT ATTRIBUTES  -->
      <section>
+        <form action="/action_page.php">
+            <input type="text" placeholder="Your name here">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" disabled>
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" maxlength="40">
+        </form>
+
+        <form action="/action_page.php">
+            <input type="text" readonly>
+        </form>
+
 
      </section>
 
